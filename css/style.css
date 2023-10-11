@@ -75,3 +75,11 @@ header {
 *  CONTENT  *
 ************/
 
+#ms-content {
+    width: 100%;
+}
+
+#ms-content .row> * {
+    border: 1px solid black;
+    background-color: antiquewhite;
+}
