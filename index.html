@@ -28,21 +28,22 @@
         -------------- -->
         <header>
             <nav id="nav" class="navbar navbar-light bg-light">
-                <div class="container-fluid"> 
+                <div class="container-fluid flex-nowrap"> 
 
                     <!-- LOGO -->
-                    <div class="ms_logo ms_mobile-logo d-inline-block d-lg-none">
-                        <img src="img/mobile-logo.png" alt="">
-                    </div>                    
-                    <div class="ms_logo ms_desktop-logo d-sm-none d-lg-inline-block">
-                        <img src="img/logo.svg" alt="">
-                    </div>  
+                    <div class="ms_logo" >
+                        <div class="ms_mobile-logo d-inline-block d-lg-none mx-2">
+                            <img src="img/mobile-logo.png" alt="">
+                        </div>                    
+                        <div class="ms_desktop-logo d-none d-lg-inline-block mx-2">
+                            <img src="img/logo.svg" alt="">
+                        </div> 
+                    </div> 
                     
                     <!-- SEARCH-BAR -->
-
-                    <div class="ms_search-bar d-flex align-items-center">
+                    <div class="ms_search-bar p-1 rounded d-flex flex-grow-1 align-items-center ">
                         <i class="fa-solid fa-magnifying-glass"></i>
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <input class="ms_input-search form-control me-2" type="search" placeholder="Prova a cercare: Lezione di Lavarel" aria-label="Search">
                     </div>
 
                     <!-- MENU -->
@@ -78,20 +79,35 @@
             ------------------>
             <section id="ms_sidebar" class="text-white">
                 <div class="container ms_height-100">
-                    <div class="row ms_height-100 ">
-                        <div class="col ms_height-content">
-                            Column
-                        </div>
-                        <div class="col ms_height-content">
-                            Column
-                        </div>
-                        <div class="col ms_height-content">
-                            Column
-                        </div>
-                        <div class="col align-self-end">
-                            Column
-                        </div>
-                    </div>
+                    <ul class="ms_list position-relative d-flex flex-column align-items-center p-0">
+
+                        <li>
+                            <button class="ms_button my-4 d-flex align-items-center bg-transparent text-white">
+                                <i class="fa-solid fa-house"></i>
+                                <span class="mx-3 d-none d-lg-inline">Home</span>
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="ms_button my-4 d-flex align-items-center bg-transparent text-white">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <span class="mx-3 d-none d-lg-inline">Stats</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="ms_button my-4 d-flex align-items-center bg-transparent text-white">
+                                <i class="fa-solid fa-signal"></i>
+                                <span class="mx-3 d-none d-lg-inline">Signals</span>
+                            </button>
+                        </li>
+                        <li class="position-absolute bottom-0 start-50 translate-middle-x">
+                            <button class="ms_button my-4 d-flex align-items-center bg-transparent text-white">
+                                <i class="fa-solid fa-gear"></i>
+                                <span class="mx-3 d-none d-lg-inline">Admin</span>
+                            </button>
+                        </li>
+                    </ul>
+    
                 </div>
             </section>
 

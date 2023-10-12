@@ -6,13 +6,14 @@
     /*color*/
     --color-bg-header:#f8f9fa;
     --color-bg-nav-logo:#ffffff;
+    --color-bg-search:#e5e5e5;
     --color-bg-sidebar:#051e34;
     --color-sm-button :#ff8f00;
 
     /*sizes*/
     --height-header:70px;
-    --width-sm-sidebar:70px;
-    --width-lg-sidebar:100px;
+    --width-sm-sidebar:50px;
+    --width-lg-sidebar:125px;
     --width-mobile-logo:50px;
     --width-desktop-logo:133px;
 }
@@ -41,52 +42,35 @@ header {
     background-color: var(--color-bg-header);
 }
 
+
 /**********
 *   NAV  *
 ************/
 
 /************LOGO*************/
-#nav div.a {
-    /*debug*/
-    background-color: orchid;
-}
-
-#nav .ms_logo {
-    /*debug*/
-    background-color: var(--color-bg-nav-logo);
-}
-
-#nav  .ms_mobile-logo {
-    /* display: inline-block; */
+#nav .ms_mobile-logo {
     width: var(--width-mobile-logo);
 }
 
 #nav  .ms_desktop-logo {
-    /* display: none; */
     width: var(--width-desktop-logo);
     line-height: 50px;
 }
 
-/* @media screen and (min-width:992px) {
-    
-    #nav .ms_mobile-logo {
-        display: none;
-    }
-
-    #nav .ms_desktop-logo {
-        display: inline-block;
-    }
-    
-} */
-
 /************SEARCH-BAR*************/
+#nav .ms_search-bar {
+    background-color: var(--color-bg-search);
+}
 
+#nav .ms_input-search {
+    border: 0;
+    background-color: var(--color-bg-search);
+}
 
 /************MENU*************/
 #nav .ms_sm-button .ms_sm-color-button {
     color:var(--color-sm-button) ;
 }
-
 
 
 
@@ -105,7 +89,6 @@ header {
     height: 100%;
     width: var(--width-sm-sidebar);
     overflow-y: hidden;
-    /*debug*/
     background-color:var(--color-bg-sidebar);
 }
 
@@ -113,10 +96,14 @@ header {
     height: 100%;
 }
 
-#ms_sidebar .ms_height-content {
-    height: fit-content;
+.ms_list {
+    list-style: none;  
+    height: 100%;
 }
 
+.ms_button {
+    border: 0; 
+}
 
 @media screen and (min-width:992px) {
     #ms_sidebar {
