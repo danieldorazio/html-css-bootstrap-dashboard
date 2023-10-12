@@ -5,6 +5,7 @@
 
     /*color*/
     --color-bg-header:#f8f9fa;
+    --color-bg-nav-logo:#ffffff;
     --color-bg-sidebar:#051e34;
 
     /*sizes*/
@@ -17,6 +18,10 @@
 /**********
 *  COMMON  *
 ************/
+img { 
+    max-width: 100%;
+}
+
 .ms-wrapper {
     width: 100%;
     height: 100vh;
@@ -33,13 +38,43 @@ header {
     background-color: var(--color-bg-header);
 }
 
-/***********NAV*********/
+/**********
+*   NAV  *
+************/
+
+/************LOGO*************/
 #nav div.a {
     /*debug*/
-    width: 20px;
     background-color: orchid;
 }
 
+#nav .ms-logo {
+    /*debug*/
+    background-color: var(--color-bg-nav-logo);
+}
+
+#nav  .ms-mobile-logo {
+    display: block;
+    width: 50px;
+}
+
+#nav  .ms-desktop-logo {
+    display: none;
+    height: 50px;
+    line-height: 50px;
+}
+
+@media screen and (min-width:992px) {
+    
+    #nav .ms-mobile-logo {
+        display: none;
+    }
+
+    #nav .ms-desktop-logo {
+        display: block;
+    }
+    
+}
 
 /**********
 *   MAIN  *
