@@ -82,20 +82,20 @@
                     <ul class="ms_list position-relative d-flex flex-column align-items-center p-0">
 
                         <li>
-                            <button class="ms_button my-4 d-flex align-items-center bg-transparent text-white">
+                            <button class="ms_button my-2 d-flex align-items-center bg-transparent text-white">
                                 <i class="fa-solid fa-house"></i>
                                 <span class="mx-3 d-none d-lg-inline">Home</span>
                             </button>
                         </li>
 
                         <li>
-                            <button class="ms_button my-4 d-flex align-items-center bg-transparent text-white">
+                            <button class="ms_button my-2 d-flex align-items-center bg-transparent text-white">
                                 <i class="fa-solid fa-chart-simple"></i>
                                 <span class="mx-3 d-none d-lg-inline">Stats</span>
                             </button>
                         </li>
                         <li>
-                            <button class="ms_button my-4 d-flex align-items-center bg-transparent text-white">
+                            <button class="ms_button my-2 d-flex align-items-center bg-transparent text-white">
                                 <i class="fa-solid fa-signal"></i>
                                 <span class="mx-3 d-none d-lg-inline">Signals</span>
                             </button>
@@ -180,252 +180,309 @@
 
                 <!--CARDS -->
                 <div class="ms_cards container-fluid my-4">
-                    <div class="row">
+                    <div class="row g-4 ">
+
                         <div class="col-12 col-lg-8">
-
                             <!-- PROSSIME CLASSI -->
-                            <div class="ms_class card">
-                                <div class="fw-bolder fs-4 ">Prossime classi</div>
-                                <table class="table">
-                                    <thead>
-                                      <tr>
-                                        <th scope="col">Nome</th>
-                                        <th scope="col" class="d-none d-lg-table-cell"></th>
-                                        <th scope="col" class="d-none d-lg-table-cell"></th>
-                                        <th scope="col" class="d-none d-lg-table-cell">Data inizio</th>
-                                        <th scope="col" class="d-none d-lg-table-cell">ROI</th>
-                                        <th scope="col">Stato</th>
-                                        <th scope="col">Azioni</th>
-                                      </tr>
-                                    </thead>
+                            <div class="card mb-4">
+                                <div class="card-header">
+                                    Prossime classi
+                                </div>
+                                <div class="card-body ms_class">
+                                    <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">Nome</th>
+                                            <th scope="col" class="d-none d-lg-table-cell"></th>
+                                            <th scope="col" class="d-none d-lg-table-cell"></th>
+                                            <th scope="col" class="d-none d-lg-table-cell">Data inizio</th>
+                                            <th scope="col" class="d-none d-lg-table-cell">ROI</th>
+                                            <th scope="col">Stato</th>
+                                            <th scope="col">Azioni</th>
+                                          </tr>
+                                        </thead>
+    
+                                        <tbody>
+                                          <tr>
+                                            <th>
+                                                <img class="ms_cards-class" src="img/class-avatar.jpg" alt="">
+                                                <span>Classe 75</span>
+                                            </th>
+                                            <td class="d-none d-lg-table-cell"></td>
+                                            <td class="d-none d-lg-table-cell"></td>
+                                            <td class="d-none d-lg-table-cell">15 Feb 2021</td>
+                                            <td class="d-none d-lg-table-cell">20%</td>
+                                            <td>
+                                                <button type="button" class="btn ms_btn btn-success rounded-pill py-0">Done</button>
+                                            </td>
+                                            <td>
+                                                <button class=" border ms_action">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </button>
+                                                <button class=" border  ms_action">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
+                                          </tr>
+    
+                                          <tr>
+                                            <th>
+                                                <img class="ms_cards-class" src="img/class-avatar.jpg" alt="">
+                                                <span>Classe 76</span>
+                                            </th>
+                                            <td class="d-none d-lg-table-cell"></td>
+                                            <td class="d-none d-lg-table-cell"></td>
+                                            <td class="d-none d-lg-table-cell">16 Feb 2021</td>
+                                            <td class="d-none d-lg-table-cell">20%</td>
+                                            <td>
+                                                <button type="button" class="btn ms_btn btn-success rounded-pill py-0">Done</button>
+                                            </td>
+                                            <td>
+                                                <button class=" border ms_action">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </button>
+                                                <button class=" border  ms_action">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
+                                          </tr>
+    
+                                          <tr>
+                                            <th>
+                                                <img class="ms_cards-class" src="img/class-avatar.jpg" alt="">
+                                                <span>Classe 77</span>
+                                            </th>
+                                            <td class="d-none d-lg-table-cell"></td>
+                                            <td class="d-none d-lg-table-cell"></td>
+                                            <td class="d-none d-lg-table-cell">17 Feb 2021</td>
+                                            <td class="d-none d-lg-table-cell">20%</td>
+                                            <td>
+                                                <button type="button" class="btn ms_btn btn-warning rounded-pill py-0">Process</button>
+                                            </td>
+                                            <td>
+                                                <button class=" border ms_action">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </button>
+                                                <button class=" border  ms_action">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
+                                          </tr>
+    
+                                          <tr>
+                                            <th>
+                                                <img class="ms_cards-class" src="img/class-avatar.jpg" alt="">
+                                                <span>Classe 78</span>
+                                            </th>
+                                            <td class="d-none d-lg-table-cell"></td>
+                                            <td class="d-none d-lg-table-cell"></td>
+                                            <td class="d-none d-lg-table-cell">18 Feb 2021</td>
+                                            <td class="d-none d-lg-table-cell">20%</td>
+                                            <td>
+                                                <button type="button" class="btn ms_btn btn-success rounded-pill py-0">Done</button>
+                                            </td>
+                                            <td>
+                                                <button class=" border ms_action">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </button>
+                                                <button class=" border  ms_action">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
+                                          </tr>
+    
+                                          <tr>
+                                            <th>
+                                                <img class="ms_cards-class" src="img/class-avatar.jpg" alt="">
+                                                <span>Classe 79</span>
+                                            </th>
+                                            <td class="d-none d-lg-table-cell"></td>
+                                            <td class="d-none d-lg-table-cell"></td>
+                                            <td class="d-none d-lg-table-cell">19 Feb 2021</td>
+                                            <td class="d-none d-lg-table-cell">20%</td>
+                                            <td>
+                                                <button type="button" class="btn ms_btn btn-danger rounded-pill py-0">Done</button>
+                                            </td>
+                                            <td>
+                                                <button class=" border ms_action">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </button>
+                                                <button class=" border  ms_action">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
+                                          </tr>
+    
+                                          <tr>
+                                            <th>
+                                                <img class="ms_cards-class" src="img/class-avatar.jpg" alt="">
+                                                <span>Classe 80</span>
+                                            </th>
+                                            <td class="d-none d-lg-table-cell"></td>
+                                            <td class="d-none d-lg-table-cell"></td>
+                                            <td class="d-none d-lg-table-cell">20 Feb 2021</td>
+                                            <td class="d-none d-lg-table-cell">20%</td>
+                                            <td>
+                                                <button type="button" class="btn ms_btn btn-success rounded-pill py-0">Done</button>
+                                            </td>
+                                            <td>
+                                                <button class=" border ms_action">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </button>
+                                                <button class=" border  ms_action">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
+                                          </tr>
+    
+                                          <tr>
+                                            <th>
+                                                <img class="ms_cards-class" src="img/class-avatar.jpg" alt="">
+                                                <span>Classe 81</span>
+                                            </th>
+                                            <td class="d-none d-lg-table-cell"></td>
+                                            <td class="d-none d-lg-table-cell"></td>
+                                            <td class="d-none d-lg-table-cell">21 Feb 2021</td>
+                                            <td class="d-none d-lg-table-cell">20%</td>
+                                            <td>
+                                                <button type="button" class="btn ms_btn btn-danger rounded-pill py-0">Done</button>
+                                            </td>
+                                            <td>
+                                                <button class=" border ms_action">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </button>
+                                                <button class=" border  ms_action">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
+                                          </tr>
+    
+                                          <tr>
+                                            <th>
+                                                <img class="ms_cards-class" src="img/class-avatar.jpg" alt="">
+                                                <span>Classe 82</span>
+                                            </th>
+                                            <td class="d-none d-lg-table-cell"></td>
+                                            <td class="d-none d-lg-table-cell"></td>
+                                            <td class="d-none d-lg-table-cell">22 Feb 2021</td>
+                                            <td class="d-none d-lg-table-cell">20%</td>
+                                            <td>
+                                                <button type="button" class="btn ms_btn btn-success rounded-pill py-0">Done</button>
+                                            </td>
+                                            <td>
+                                                <button class=" border ms_action">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </button>
+                                                <button class=" border  ms_action">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
+                                          </tr>
 
-                                    <tbody>
-                                      <tr>
-                                        <th>
-                                            <img class="ms_cards-class" src="img/class-avatar.jpg" alt="">
-                                            <span>Classe 75</span>
-                                        </th>
-                                        <td class="d-none d-lg-table-cell"></td>
-                                        <td class="d-none d-lg-table-cell"></td>
-                                        <td class="d-none d-lg-table-cell">15 Feb 2021</td>
-                                        <td class="d-none d-lg-table-cell">20%</td>
-                                        <td>
-                                            <button type="button" class="btn ms_btn btn-success rounded-pill py-0">Done</button>
-                                        </td>
-                                        <td>
-                                            <button class=" border ms_action">
-                                                <i class="fa-solid fa-pen"></i>
-                                            </button>
-                                            <button class=" border  ms_action">
-                                                <i class="fa-solid fa-trash"></i>
-                                            </button>
-                                        </td>
-                                      </tr>
-
-                                      <tr>
-                                        <th>
-                                            <img class="ms_cards-class" src="img/class-avatar.jpg" alt="">
-                                            <span>Classe 76</span>
-                                        </th>
-                                        <td class="d-none d-lg-table-cell"></td>
-                                        <td class="d-none d-lg-table-cell"></td>
-                                        <td class="d-none d-lg-table-cell">16 Feb 2021</td>
-                                        <td class="d-none d-lg-table-cell">20%</td>
-                                        <td>
-                                            <button type="button" class="btn ms_btn btn-success rounded-pill py-0">Done</button>
-                                        </td>
-                                        <td>
-                                            <button class=" border ms_action">
-                                                <i class="fa-solid fa-pen"></i>
-                                            </button>
-                                            <button class=" border  ms_action">
-                                                <i class="fa-solid fa-trash"></i>
-                                            </button>
-                                        </td>
-                                      </tr>
-
-                                      <tr>
-                                        <th>
-                                            <img class="ms_cards-class" src="img/class-avatar.jpg" alt="">
-                                            <span>Classe 77</span>
-                                        </th>
-                                        <td class="d-none d-lg-table-cell"></td>
-                                        <td class="d-none d-lg-table-cell"></td>
-                                        <td class="d-none d-lg-table-cell">17 Feb 2021</td>
-                                        <td class="d-none d-lg-table-cell">20%</td>
-                                        <td>
-                                            <button type="button" class="btn ms_btn btn-warning rounded-pill py-0">Process</button>
-                                        </td>
-                                        <td>
-                                            <button class=" border ms_action">
-                                                <i class="fa-solid fa-pen"></i>
-                                            </button>
-                                            <button class=" border  ms_action">
-                                                <i class="fa-solid fa-trash"></i>
-                                            </button>
-                                        </td>
-                                      </tr>
-
-                                      <tr>
-                                        <th>
-                                            <img class="ms_cards-class" src="img/class-avatar.jpg" alt="">
-                                            <span>Classe 78</span>
-                                        </th>
-                                        <td class="d-none d-lg-table-cell"></td>
-                                        <td class="d-none d-lg-table-cell"></td>
-                                        <td class="d-none d-lg-table-cell">18 Feb 2021</td>
-                                        <td class="d-none d-lg-table-cell">20%</td>
-                                        <td>
-                                            <button type="button" class="btn ms_btn btn-success rounded-pill py-0">Done</button>
-                                        </td>
-                                        <td>
-                                            <button class=" border ms_action">
-                                                <i class="fa-solid fa-pen"></i>
-                                            </button>
-                                            <button class=" border  ms_action">
-                                                <i class="fa-solid fa-trash"></i>
-                                            </button>
-                                        </td>
-                                      </tr>
-
-                                      <tr>
-                                        <th>
-                                            <img class="ms_cards-class" src="img/class-avatar.jpg" alt="">
-                                            <span>Classe 79</span>
-                                        </th>
-                                        <td class="d-none d-lg-table-cell"></td>
-                                        <td class="d-none d-lg-table-cell"></td>
-                                        <td class="d-none d-lg-table-cell">19 Feb 2021</td>
-                                        <td class="d-none d-lg-table-cell">20%</td>
-                                        <td>
-                                            <button type="button" class="btn ms_btn btn-danger rounded-pill py-0">Done</button>
-                                        </td>
-                                        <td>
-                                            <button class=" border ms_action">
-                                                <i class="fa-solid fa-pen"></i>
-                                            </button>
-                                            <button class=" border  ms_action">
-                                                <i class="fa-solid fa-trash"></i>
-                                            </button>
-                                        </td>
-                                      </tr>
-
-                                      <tr>
-                                        <th>
-                                            <img class="ms_cards-class" src="img/class-avatar.jpg" alt="">
-                                            <span>Classe 80</span>
-                                        </th>
-                                        <td class="d-none d-lg-table-cell"></td>
-                                        <td class="d-none d-lg-table-cell"></td>
-                                        <td class="d-none d-lg-table-cell">20 Feb 2021</td>
-                                        <td class="d-none d-lg-table-cell">20%</td>
-                                        <td>
-                                            <button type="button" class="btn ms_btn btn-success rounded-pill py-0">Done</button>
-                                        </td>
-                                        <td>
-                                            <button class=" border ms_action">
-                                                <i class="fa-solid fa-pen"></i>
-                                            </button>
-                                            <button class=" border  ms_action">
-                                                <i class="fa-solid fa-trash"></i>
-                                            </button>
-                                        </td>
-                                      </tr>
-
-                                      <tr>
-                                        <th>
-                                            <img class="ms_cards-class" src="img/class-avatar.jpg" alt="">
-                                            <span>Classe 81</span>
-                                        </th>
-                                        <td class="d-none d-lg-table-cell"></td>
-                                        <td class="d-none d-lg-table-cell"></td>
-                                        <td class="d-none d-lg-table-cell">21 Feb 2021</td>
-                                        <td class="d-none d-lg-table-cell">20%</td>
-                                        <td>
-                                            <button type="button" class="btn ms_btn btn-danger rounded-pill py-0">Done</button>
-                                        </td>
-                                        <td>
-                                            <button class=" border ms_action">
-                                                <i class="fa-solid fa-pen"></i>
-                                            </button>
-                                            <button class=" border  ms_action">
-                                                <i class="fa-solid fa-trash"></i>
-                                            </button>
-                                        </td>
-                                      </tr>
-
-                                      <tr>
-                                        <th>
-                                            <img class="ms_cards-class" src="img/class-avatar.jpg" alt="">
-                                            <span>Classe 82</span>
-                                        </th>
-                                        <td class="d-none d-lg-table-cell"></td>
-                                        <td class="d-none d-lg-table-cell"></td>
-                                        <td class="d-none d-lg-table-cell">22 Feb 2021</td>
-                                        <td class="d-none d-lg-table-cell">20%</td>
-                                        <td>
-                                            <button type="button" class="btn ms_btn btn-success rounded-pill py-0">Done</button>
-                                        </td>
-                                        <td>
-                                            <button class=" border ms_action">
-                                                <i class="fa-solid fa-pen"></i>
-                                            </button>
-                                            <button class=" border  ms_action">
-                                                <i class="fa-solid fa-trash"></i>
-                                            </button>
-                                        </td>
-                                      </tr>
-
-                                    </tbody>
-                                  </table>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
 
-                            <!-- F.A.Q. -->
+                            <!-- F.A.Q. --> 
                             <div class="card">
-                                <div class="fw-bolder fs-4 ">F.A.Q.</div>
-                                <div class="accordion" id="accordionExample">
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                          Accordion Item #1
-                                        </button>
-                                      </h2>
-                                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                <div class="card-header">
+                                    F.A.Q.
+                                </div>
+                                <div class="card-body">
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-controls="collapseOne">
+                                              Accordion Item #1
+                                            </button>
+                                          </h2>
+                                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            </div>
+                                          </div>
                                         </div>
-                                      </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                          Accordion Item #2
-                                        </button>
-                                      </h2>
-                                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                              Accordion Item #2
+                                            </button>
+                                          </h2>
+                                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            </div>
+                                          </div>
                                         </div>
-                                      </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header" id="headingThree">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                          Accordion Item #3
-                                        </button>
-                                      </h2>
-                                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                              Accordion Item #3
+                                            </button>
+                                          </h2>
+                                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            </div>
+                                          </div>
                                         </div>
-                                      </div>
                                     </div>
-                                  </div>
+                                </div>
                             </div> 
                         </div>
-                        <div class="col-12 col-lg-4">                
-                            <div class="card">TODO</div>
-                            <div class="card">GRAFICO</div>  
+
+                        <div class="col-12 col-lg-4">  
+                            <!-- TODO -->
+                            <div class="card mb-4">
+                                <div class="card-header">
+                                    Todo
+                                </div>
+                                <div class="card-body">
+                                    <ul>
+                                        <li>
+                                            <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                          Default checkbox
+                                        </label>
+                                    </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                          Default checkbox
+                                        </label>
+                                    </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                          Default checkbox
+                                        </label>
+                                    </div>
+                                        </li>
+                                    </ul>   
+                                </div>
+                            </div>
+
+                        <!-- GRAFICO -->
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="img/stats.jpeg" alt="">
+                                <div>Utenti attivi</div>
+                                <div>Lista degli utenti attivi in piattaforma null'ultimo mese</div>
+                                <ul class="list-group">
+                                    <li class="list-group-item">An item</li>
+                                    <li class="list-group-item">A second item</li>
+                                    <li class="list-group-item">A third item</li>
+                                    <li class="list-group-item">A fourth item</li>
+                                    <li class="list-group-item"><a href="">And a fifth one</a></li>
+                                </ul>
+                            </div>
+                          </div>
                         </div>                     
                     </div>
                 </div>
