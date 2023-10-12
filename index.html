@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-
-    <!-- FONTAWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    
     <!-- FRAMEWORK -->
     <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -15,11 +12,14 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
     crossorigin="anonymous"/>
 
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <!-- CUSTOM STYLE -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <main class="ms-wrapper">
+    <div class="ms_wrapper">
         <!--------------
         -   HEADER     -
         -------------- -->
@@ -31,21 +31,23 @@
                 <div class="container-fluid"> 
 
                     <!-- LOGO -->
-                    <div class="ms-logo ms-mobile-logo">
+                    <div class="ms_logo ms_mobile-logo d-inline-block d-lg-none">
                         <img src="img/mobile-logo.png" alt="">
                     </div>                    
-                    <div class="ms-logo ms-desktop-logo">
+                    <div class="ms_logo ms_desktop-logo d-sm-none d-lg-inline-block">
                         <img src="img/logo.svg" alt="">
                     </div>  
                     
                     <!-- SEARCH-BAR -->
-                    <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    </form>
 
-                    <!-- ALLERT -->
-                    <div class="ms.allert btn-group" role="group" aria-label="Basic outlined example">
-                        <div class="ms-lg-button">
+                    <div class="ms_search-bar d-flex align-items-center">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    </div>
+
+                    <!-- MENU -->
+                    <div class="ms_menu btn-group" role="group" aria-label="Basic outlined example">
+                        <div class="ms_lg-button d-none d-lg-inline-block">
                             <button type="button" class="btn">
                                 <i class="fa-solid fa-list"></i>
                             </button>
@@ -56,8 +58,8 @@
                                 <i class="fa-solid fa-ellipsis-vertical"></i>
                             </button>
                         </div>
-                        <div class="ms-sm-button">
-                            <button type="button" class="btn ms-sm-color-button">
+                        <div class="ms_sm-button">
+                            <button type="button" class="btn ms_sm-color-button">
                                 <i class="fa-solid fa-bell"></i>
                             </button>
                         </div>
@@ -69,21 +71,21 @@
         <!--------------
         -   MAIN       -
         ------------------>
-        <main class="d-flex">
+        <main class="ms_main d-flex">
 
             <!--------------
             -   SIDEBAR     -
             ------------------>
-            <section id="ms-sidebar" class="text-white">
-                <div class="container ms-height-100">
-                    <div class="row ms-height-100 ">
-                        <div class="col ms-height-content">
+            <section id="ms_sidebar" class="text-white">
+                <div class="container ms_height-100">
+                    <div class="row ms_height-100 ">
+                        <div class="col ms_height-content">
                             Column
                         </div>
-                        <div class="col ms-height-content">
+                        <div class="col ms_height-content">
                             Column
                         </div>
-                        <div class="col ms-height-content">
+                        <div class="col ms_height-content">
                             Column
                         </div>
                         <div class="col align-self-end">
@@ -97,21 +99,24 @@
             <!--------------
             -   CONTENT     -
             ------------------>
-            <section id="ms-content">
-                <div class="container">
+            <section id="ms_content">
+                <div class="ms_breadcrumb py-4">BOOLEAN
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores cum, ad quo ut explicabo sapiente temporibus ipsa neque. Voluptatum tempora suscipit pariatur dicta numquam ipsum minima ullam ab modi dolorem?
+                </div>
+                <div class="container-fluid my-4">
                     <div class="row">
-                        <div class="col-12">BOOLEAN</div>
-                        <div class="col-12 col-lg-8 order-lg-0">prossime classi</div>
-                        <div class="col-12 col-lg-8 order-lg-2">F.A.Q.</div>                    
-                        <div class="col-12 col-lg-4 order-lg-1">TODO</div>
-                        <div class="col-12 col-lg-4 order-lg-3">GRAFICO</div>                    
+                        <div class="col-12 col-lg-8">
+                            <div class="card">prossime classi</div>
+                            <div class="card">F.A.Q.</div> 
+                        </div>
+                        <div class="col-12 col-lg-4">                
+                            <div class="card">TODO</div>
+                            <div class="card">GRAFICO</div>  
+                        </div>                     
                     </div>
                 </div>
             </section>
-        
-        
-        
         </main>
-    </main>
+    </div>
 </body>
 </html>

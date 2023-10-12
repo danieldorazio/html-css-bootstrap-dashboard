@@ -25,7 +25,7 @@ img {
     max-width: 100%;
 }
 
-.ms-wrapper {
+.ms_wrapper {
     width: 100%;
     height: 100vh;
     /*debug*/
@@ -51,82 +51,75 @@ header {
     background-color: orchid;
 }
 
-#nav .ms-logo {
+#nav .ms_logo {
     /*debug*/
     background-color: var(--color-bg-nav-logo);
 }
 
-#nav  .ms-mobile-logo {
-    display: block;
+#nav  .ms_mobile-logo {
+    /* display: inline-block; */
     width: var(--width-mobile-logo);
 }
 
-#nav  .ms-desktop-logo {
-    display: none;
+#nav  .ms_desktop-logo {
+    /* display: none; */
     width: var(--width-desktop-logo);
     line-height: 50px;
 }
 
-@media screen and (min-width:992px) {
+/* @media screen and (min-width:992px) {
     
-    #nav .ms-mobile-logo {
+    #nav .ms_mobile-logo {
         display: none;
     }
 
-    #nav .ms-desktop-logo {
-        display: block;
+    #nav .ms_desktop-logo {
+        display: inline-block;
     }
     
-}
+} */
 
 /************SEARCH-BAR*************/
 
 
-/************ALLERT*************/
-#nav .ms-lg-button {
-    display: none;
-}
-
-#nav .ms-sm-button .ms-sm-color-button {
+/************MENU*************/
+#nav .ms_sm-button .ms_sm-color-button {
     color:var(--color-sm-button) ;
 }
 
-@media screen and (min-width:992px) {
-    
-    #nav .ms-lg-button {
-        display: inline-block;
-    }
-    
-}
 
 
 
 /**********
 *   MAIN  *
 ************/
+.ms_main {
+    height: calc(100vh - var(--height-header)); 
+    width: 100%;
+}
+
 /**********
 * SIDEBAR  *
 ************/
-#ms-sidebar {
-    height: calc(100vh - var(--height-header)); 
+#ms_sidebar {
+    height: 100%;
     width: var(--width-sm-sidebar);
+    overflow-y: hidden;
     /*debug*/
     background-color:var(--color-bg-sidebar);
 }
 
-#ms-sidebar .ms-height-100 {
+#ms_sidebar .ms_height-100 {
     height: 100%;
 }
 
-#ms-sidebar .ms-height-content {
+#ms_sidebar .ms_height-content {
     height: fit-content;
 }
 
 
-
-
 @media screen and (min-width:992px) {
-    #ms-sidebar {
+    #ms_sidebar {
         width: var(--width-lg-sidebar);
     }
 }
@@ -135,11 +128,20 @@ header {
 *  CONTENT  *
 ************/
 
-#ms-content {
-    width: 100%;
+#ms_content {
+    width: calc(100% - var(--width-sm-sidebar));
+    height: 100%;
+    overflow-y: auto;
 }
 
-#ms-content .row> * {
+#ms_content .row> * {
+    /*debug*/
     border: 1px solid black;
     background-color: antiquewhite;
+}
+
+@media screen and (min-width:992px) {
+    #ms_content {
+        width: calc(100% - var(--width-lg-sidebar));
+    }
 }
