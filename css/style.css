@@ -7,11 +7,14 @@
     --color-bg-header:#f8f9fa;
     --color-bg-nav-logo:#ffffff;
     --color-bg-sidebar:#051e34;
+    --color-sm-button :#ff8f00;
 
     /*sizes*/
     --height-header:70px;
     --width-sm-sidebar:70px;
     --width-lg-sidebar:100px;
+    --width-mobile-logo:50px;
+    --width-desktop-logo:133px;
 }
 
 
@@ -55,12 +58,12 @@ header {
 
 #nav  .ms-mobile-logo {
     display: block;
-    width: 50px;
+    width: var(--width-mobile-logo);
 }
 
 #nav  .ms-desktop-logo {
     display: none;
-    height: 50px;
+    width: var(--width-desktop-logo);
     line-height: 50px;
 }
 
@@ -75,6 +78,28 @@ header {
     }
     
 }
+
+/************SEARCH-BAR*************/
+
+
+/************ALLERT*************/
+#nav .ms-lg-button {
+    display: none;
+}
+
+#nav .ms-sm-button .ms-sm-color-button {
+    color:var(--color-sm-button) ;
+}
+
+@media screen and (min-width:992px) {
+    
+    #nav .ms-lg-button {
+        display: inline-block;
+    }
+    
+}
+
+
 
 /**********
 *   MAIN  *
