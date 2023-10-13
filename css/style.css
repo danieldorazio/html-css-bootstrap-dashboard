@@ -183,15 +183,12 @@ header {
     color: var(--color-bg-breadcrumb);
 }
 
-
-
 /*************BOOLEAN***************/
 .ms_btn-breadcrumb {
     background-color: var(--color-bg-btn-breadcrumb);
     width: max-content;
     font-size: .8rem;
 }
-
 
 
 @media screen and (min-width: 992px){
