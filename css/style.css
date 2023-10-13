@@ -45,6 +45,10 @@ ul {
     width: auto;
 }
 
+.ms_width-100 {
+    width: 100%;
+}
+
 /**********
 *   HEADER  *
 ************/
@@ -80,11 +84,25 @@ header {
 }
 
 /************MENU*************/
+#nav .ms_sm-button:hover .ms_main-bell {
+    display: inline-block ;
+}
+
 #nav .ms_sm-button .ms_sm-color-button {
     color:var(--color-sm-button) ;
 }
 
+#nav .ms_sm-button .ms_main-bell {
+    display: none;
+    background-color: white;
+    top:33px;
+    right: 20px;  
+}
 
+#nav .ms_sm-button .ms_main-bell a{
+    text-decoration: none;  
+    color: inherit;
+}
 
 /**********
 *   MAIN  *
@@ -93,6 +111,7 @@ header {
     height: calc(100vh - var(--height-header)); 
     width: 100%;
 }
+
 
 /**********
 * SIDEBAR  *
@@ -112,11 +131,16 @@ header {
     border: 0; 
 }
 
+#ms_sidebar .ms_list> li:hover {
+    background-color: rgba(255, 255, 255, 0.712);
+}
+
 @media screen and (min-width:992px) {
     #ms_sidebar {
         width: var(--width-lg-sidebar);
     }
 }
+
 
 /**********
 *  CONTENT  *
@@ -144,19 +168,31 @@ header {
     background-color: var(--color-bg-breadcrumb);
 }
 
+/**********NUOVI STUDENTI*************/
 .ms_btn-breadcrumb-plus {
     border: 1px solid white;
 }
+.ms_btn-breadcrumb-plus .fa-plus{
+    color: white;
+}
 
+.ms_btn-breadcrumb-plus:hover {
+    background-color: white;
+}
+.ms_btn-breadcrumb-plus:hover .fa-plus {
+    color: var(--color-bg-breadcrumb);
+}
+
+
+
+/*************BOOLEAN***************/
 .ms_btn-breadcrumb {
     background-color: var(--color-bg-btn-breadcrumb);
-    width: fit-content;
+    width: max-content;
     font-size: .8rem;
 }
 
-.ms_width-100 {
-    width: 100%;
-}
+
 
 @media screen and (min-width: 992px){
     .ms_width-100 {
@@ -168,7 +204,7 @@ header {
 *    CARDS  *
 ************/
 
-/**********PRO"SSIME CLASSI************/
+/**********PROSSIME CLASSI************/
 .ms_class img.ms_cards-class {
     width: var(--width-img-cards);
 }
@@ -176,5 +212,9 @@ header {
 .ms_class .ms_action {
     color: var(--color-btn-action);
     border: 1px solid var(--color-btn-action);
+}
+
+.ms_class tr:hover{
+    background-color: rgba(0, 0, 0, 0.095);
 }
 
