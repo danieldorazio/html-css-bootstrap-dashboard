@@ -132,75 +132,83 @@
 
                             <!-- offcanvas -->
                             <div class="offcanvas offcanvas-end ms_width-100 text-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                
                                 <div class="offcanvas-header">
                                     <h5 id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
+
                                 <div class="offcanvas-body">
 
                                     <!-- form -->
-                                    <form>
-                                        <div class="mb-3 ">
-                                          <label for="nome" class="form-label">Nome</label>
-                                          <input type="text" class="form-control" id="nome">
+                                    <form class="container-fluid">
+                                        <div class="row">
+                                            <div class="mb-3 ps-0 col-md-6">
+                                                <label for="nome" class="form-label">Nome</label>
+                                                <input type="text" class="form-control" id="nome">
+                                            </div>
+
+                                            <div class="mb-3 ps-0 col-md-6">
+                                            <label for="cognome" class="form-label">Cognome</label>
+                                            <input type="text" class="form-control" id="cognome">
+                                            </div>
+ 
+                                            <div class="mb-3 ps-0 col-md-6">
+                                                <label for="cognome" class="form-label">Email</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                                    <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                                                </div>
+                                            </div>
+
+                                            <div class="mb-3  ps-0 col-md-6">
+                                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                            </div>
+
+                                            <div class="mb-3 ps-0">
+                                                <label for="indirizzo" class="form-label">Indirizzo</label>
+                                                <input type="text" class="form-control" id="indirizzo">
+                                            </div>
+
+                                            <div class="mb-3  ps-0 col-md-6">
+                                                <label for="città" class="form-label">Città</label>
+                                                <input type="text" class="form-control" id="città">
+                                            </div>
+
+                                            <div class="col-md-3 ps-0">
+                                                <label class="form-label" for="inputGroupSelect01">Stato</label>
+                                                <div class="input-group mb-3">
+                                                    <select class="form-select" id="inputGroupSelect01">
+                                                    <option selected>Scegli...</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="mb-3 ps-0 col-md-3">
+                                                <label for="cap" class="form-label">CAP</label>
+                                                <input type="text" class="form-control" id="cap">
+                                            </div>
+
+                                            <div class="mb-3 ps-0">
+                                                <label for="formFileSm" class="form-label">Foto</label>
+                                                <input class="form-control form-control-sm" id="formFileSm" type="file">
+                                            </div>
+
+                                            <div class="form-check mb-4 col-12">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                Selezione per proseguire
+                                                </label>
+                                            </div>
+                                
+                                            <button type="submit" class="btn btn-primary me-3 ms_width-auto">Salva</button>
+                                            <button type="submit" class="btn btn-warning ms_width-auto">Suota</button>
                                         </div>
-
-                                        <div class="mb-3">
-                                          <label for="cognome" class="form-label">Cognome</label>
-                                          <input type="text" class="form-control" id="cognome">
-                                        </div>
-
-                                        <label for="cognome" class="form-label">Email</label>
-                                        <div class="input-group mb-3">
-                                            <span class="input-group-text" id="basic-addon1">@</span>
-                                            <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-
-                                        <div class="mb-3">
-                                          <label for="exampleInputPassword1" class="form-label">Password</label>
-                                          <input type="password" class="form-control" id="exampleInputPassword1">
-                                        </div>
-
-                                        <div class="mb-3">
-                                            <label for="indirizzo" class="form-label">Indirizzo</label>
-                                            <input type="text" class="form-control" id="indirizzo">
-                                        </div>
-
-                                        <div class="mb-3">
-                                            <label for="città" class="form-label">Città</label>
-                                            <input type="text" class="form-control" id="città">
-                                        </div>
-
-                                        <label class="form-label" for="inputGroupSelect01">Stato</label>
-                                        <div class="input-group mb-3">
-                                            <select class="form-select" id="inputGroupSelect01">
-                                              <option selected>Scegli...</option>
-                                              <option value="1">One</option>
-                                              <option value="2">Two</option>
-                                              <option value="3">Three</option>
-                                            </select>
-                                          </div>
-
-                                          <div class="mb-3">
-                                            <label for="cap" class="form-label">CAP</label>
-                                            <input type="text" class="form-control" id="cap">
-                                        </div>
-
-                                        <div class="mb-3">
-                                            <label for="formFileSm" class="form-label">Foto</label>
-                                            <input class="form-control form-control-sm" id="formFileSm" type="file">
-                                        </div>
-
-                                        <div class="form-check mb-4">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">
-                                              Selezione per proseguire
-                                            </label>
-                                          </div>
-                            
-                                        <button type="submit" class="btn btn-primary">Salva</button>
-                                        <button type="submit" class="btn btn-warning">Suota</button>
-                                      </form>
+                                    </form>
                                 </div>
                             </div>
 
@@ -272,10 +280,10 @@
                                         <thead>
                                           <tr>
                                             <th scope="col">Nome</th>
-                                            <th scope="col" class="d-none d-lg-table-cell"></th>
-                                            <th scope="col" class="d-none d-lg-table-cell"></th>
-                                            <th scope="col" class="d-none d-lg-table-cell">Data inizio</th>
-                                            <th scope="col" class="d-none d-lg-table-cell">ROI</th>
+                                            <th scope="col" class="d-none d-md-table-cell"></th>
+                                            <th scope="col" class="d-none d-md-table-cell"></th>
+                                            <th scope="col" class="d-none d-md-table-cell">Data inizio</th>
+                                            <th scope="col" class="d-none d-md-table-cell">ROI</th>
                                             <th scope="col">Stato</th>
                                             <th scope="col">Azioni</th>
                                           </tr>
@@ -287,10 +295,10 @@
                                                 <img class="ms_cards-class" src="img/class-avatar.jpg" alt="">
                                                 <span>Classe 75</span>
                                             </th>
-                                            <td class="d-none d-lg-table-cell"></td>
-                                            <td class="d-none d-lg-table-cell"></td>
-                                            <td class="d-none d-lg-table-cell">15 Feb 2021</td>
-                                            <td class="d-none d-lg-table-cell">20%</td>
+                                            <td class="d-none d-md-table-cell"></td>
+                                            <td class="d-none d-md-table-cell"></td>
+                                            <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                            <td class="d-none d-md-table-cell">20%</td>
                                             <td>
                                                 <button type="button" class="btn ms_btn btn-success rounded-pill py-0">Done</button>
                                             </td>
@@ -309,10 +317,10 @@
                                                 <img class="ms_cards-class" src="img/class-avatar.jpg" alt="">
                                                 <span>Classe 76</span>
                                             </th>
-                                            <td class="d-none d-lg-table-cell"></td>
-                                            <td class="d-none d-lg-table-cell"></td>
-                                            <td class="d-none d-lg-table-cell">16 Feb 2021</td>
-                                            <td class="d-none d-lg-table-cell">20%</td>
+                                            <td class="d-none d-md-table-cell"></td>
+                                            <td class="d-none d-md-table-cell"></td>
+                                            <td class="d-none d-md-table-cell">16 Feb 2021</td>
+                                            <td class="d-none d-md-table-cell">20%</td>
                                             <td>
                                                 <button type="button" class="btn ms_btn btn-success rounded-pill py-0">Done</button>
                                             </td>
@@ -331,10 +339,10 @@
                                                 <img class="ms_cards-class" src="img/class-avatar.jpg" alt="">
                                                 <span>Classe 77</span>
                                             </th>
-                                            <td class="d-none d-lg-table-cell"></td>
-                                            <td class="d-none d-lg-table-cell"></td>
-                                            <td class="d-none d-lg-table-cell">17 Feb 2021</td>
-                                            <td class="d-none d-lg-table-cell">20%</td>
+                                            <td class="d-none d-md-table-cell"></td>
+                                            <td class="d-none d-md-table-cell"></td>
+                                            <td class="d-none d-md-table-cell">17 Feb 2021</td>
+                                            <td class="d-none d-md-table-cell">20%</td>
                                             <td>
                                                 <button type="button" class="btn ms_btn btn-warning rounded-pill py-0">Process</button>
                                             </td>
@@ -353,10 +361,10 @@
                                                 <img class="ms_cards-class" src="img/class-avatar.jpg" alt="">
                                                 <span>Classe 78</span>
                                             </th>
-                                            <td class="d-none d-lg-table-cell"></td>
-                                            <td class="d-none d-lg-table-cell"></td>
-                                            <td class="d-none d-lg-table-cell">18 Feb 2021</td>
-                                            <td class="d-none d-lg-table-cell">20%</td>
+                                            <td class="d-none d-md-table-cell"></td>
+                                            <td class="d-none d-md-table-cell"></td>
+                                            <td class="d-none d-md-table-cell">18 Feb 2021</td>
+                                            <td class="d-none d-md-table-cell">20%</td>
                                             <td>
                                                 <button type="button" class="btn ms_btn btn-success rounded-pill py-0">Done</button>
                                             </td>
@@ -375,10 +383,10 @@
                                                 <img class="ms_cards-class" src="img/class-avatar.jpg" alt="">
                                                 <span>Classe 79</span>
                                             </th>
-                                            <td class="d-none d-lg-table-cell"></td>
-                                            <td class="d-none d-lg-table-cell"></td>
-                                            <td class="d-none d-lg-table-cell">19 Feb 2021</td>
-                                            <td class="d-none d-lg-table-cell">20%</td>
+                                            <td class="d-none d-md-table-cell"></td>
+                                            <td class="d-none d-md-table-cell"></td>
+                                            <td class="d-none d-md-table-cell">19 Feb 2021</td>
+                                            <td class="d-none d-md-table-cell">20%</td>
                                             <td>
                                                 <button type="button" class="btn ms_btn btn-danger rounded-pill py-0">Done</button>
                                             </td>
@@ -397,10 +405,10 @@
                                                 <img class="ms_cards-class" src="img/class-avatar.jpg" alt="">
                                                 <span>Classe 80</span>
                                             </th>
-                                            <td class="d-none d-lg-table-cell"></td>
-                                            <td class="d-none d-lg-table-cell"></td>
-                                            <td class="d-none d-lg-table-cell">20 Feb 2021</td>
-                                            <td class="d-none d-lg-table-cell">20%</td>
+                                            <td class="d-none d-md-table-cell"></td>
+                                            <td class="d-none d-md-table-cell"></td>
+                                            <td class="d-none d-md-table-cell">20 Feb 2021</td>
+                                            <td class="d-none d-md-table-cell">20%</td>
                                             <td>
                                                 <button type="button" class="btn ms_btn btn-success rounded-pill py-0">Done</button>
                                             </td>
@@ -419,10 +427,10 @@
                                                 <img class="ms_cards-class" src="img/class-avatar.jpg" alt="">
                                                 <span>Classe 81</span>
                                             </th>
-                                            <td class="d-none d-lg-table-cell"></td>
-                                            <td class="d-none d-lg-table-cell"></td>
-                                            <td class="d-none d-lg-table-cell">21 Feb 2021</td>
-                                            <td class="d-none d-lg-table-cell">20%</td>
+                                            <td class="d-none d-md-table-cell"></td>
+                                            <td class="d-none d-md-table-cell"></td>
+                                            <td class="d-none d-md-table-cell">21 Feb 2021</td>
+                                            <td class="d-none d-md-table-cell">20%</td>
                                             <td>
                                                 <button type="button" class="btn ms_btn btn-danger rounded-pill py-0">Done</button>
                                             </td>
@@ -441,10 +449,10 @@
                                                 <img class="ms_cards-class" src="img/class-avatar.jpg" alt="">
                                                 <span>Classe 82</span>
                                             </th>
-                                            <td class="d-none d-lg-table-cell"></td>
-                                            <td class="d-none d-lg-table-cell"></td>
-                                            <td class="d-none d-lg-table-cell">22 Feb 2021</td>
-                                            <td class="d-none d-lg-table-cell">20%</td>
+                                            <td class="d-none d-md-table-cell"></td>
+                                            <td class="d-none d-md-table-cell"></td>
+                                            <td class="d-none d-md-table-cell">22 Feb 2021</td>
+                                            <td class="d-none d-md-table-cell">20%</td>
                                             <td>
                                                 <button type="button" class="btn ms_btn btn-success rounded-pill py-0">Done</button>
                                             </td>

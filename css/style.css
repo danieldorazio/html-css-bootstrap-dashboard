@@ -41,6 +41,10 @@ ul {
     list-style: none;
 }
 
+.ms_width-auto {
+    width: auto;
+}
+
 /**********
 *   HEADER  *
 ************/
